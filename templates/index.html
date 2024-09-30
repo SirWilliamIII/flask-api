@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <title>books server</title>
+    <meta
+      name="description"
+      content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="" />
+  </head>
+  <body>
+    <div>
+      <h1>books server</h1>
+      <br />
+      
+        <code>@app.route("/request", methods=['POST'])</code>
+        <br />
+        <div>
+            <br />
+        <code>
+<p>
+Handles POST requests to create a new book entry. </p>
+Route: /request
+<br />
+Method: POST
+<br />
+Request JSON:
+<br />
+{
+    "email": "<user_email>",
+    "title": "<book_title>"
+}
+<br />
+    {
+        "email": "<user_email>",
+        "title": "<book_title>"
+    }
+    <br />
+    <br />
+Responses:
+<br />
+    <br />
+    422:
+    
+        {
+            "status": "422",
+            "res": "failure",
+            "error": "Invalid email format. Please enter a valid email address"
+        }
+<br />
+    <br />
+    404:
+    
+        {
+            "status": "404",
+            "res": "Error ⛔❌! Book with title <book_title> is already in library!"
+        }
+        <br />
+    <br />
+    200:
+    
+        {
+            "status": "200",
+            "res": {
+                "id": <book_id>,
+                "available": <availability_status>,
+                "title": "<book_title>",
+                "date_added": "<date_added>"
+            },
+            "msg": "Success creating a new book!👍😀"
+        }
+"""
+      </code>
+      </div>
+      <div>
+      <p>Routes: </p>
+        
+      <code>@app.route('/request', methods=['GET'])
+        </code>
+    </div>
+<div>
+      <p>Routes: </p>
+        
+      <code>@app.route('/request/<id>', methods=['GET'])
+        </code>
+    </div>
+
+    <div>
+      <p>Routes: </p>
+        
+      <code>@app.route("/request", methods=['PUT'])
+        </code>
+    </div>
+    <div>
+      <p>Routes: </p>
+        
+      <code>@app.route('/request/<id>', methods=['DELETE'])
+        </code>
+    </div>
+
+    
+
+
+      
+      
+    </div>
+
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif
+  </body>
+</html>
